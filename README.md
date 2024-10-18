@@ -1,11 +1,12 @@
 # check-aks-sku-available
 How can i check the SKU in a given AZ where my AKS cluster is running for example?
-- This code looks at a region allows you to enter a letter for the SKU needed for example: NV. 
+
+- This code looks up a given region and allows you to enter letters of the SKU you are looking for using regex, for example: NV
 
 ![image](https://github.com/user-attachments/assets/d89da4c4-f373-4813-9ab9-7cf34d772027)
 
 
-If you need to check availability in specific availability zones within a region, you can filter the SKUs based on the zones they support. Here's an updated version of your script to include zone information:
+Here is the sample code in Python. 
 
 ```python
 
