@@ -25,7 +25,8 @@ def list_vm_skus(region, pattern):
     start_time = time.time()
     
     credential = DefaultAzureCredential()
-    subscription_id = 'cb3f71fd-4926-40fa-b99e-06449084f4aa'  # Replace with your subscription ID
+    subscription_client = SubscriptionClient(credential)
+    subscription_id = next(subscription_client.subscriptions.list()).subscription_id
     compute_client = ComputeManagementClient(credential, subscription_id)
 
     reserved_instances = get_reserved_instances(subscription_id)
