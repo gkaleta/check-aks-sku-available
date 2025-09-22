@@ -72,7 +72,7 @@ if __name__ == "__main__":
 ```
 
 ```python
-pip install azure-identity azure-mgmt-containerservice azure-mgmt-compute
+pip install azure-mgmt-resource azure-mgmt-resourcegraph azure-mgmt-compute azure-identity tabulate tqdm
 ```
 
 TO-DO
